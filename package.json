@@ -13,7 +13,7 @@
     "eslint"
   ],
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.18.0",
     "connected-react-router": "^6.1.0",
     "css-loader": "^2.1.0",
     "eslint-plugin-jest": "^22.1.2",

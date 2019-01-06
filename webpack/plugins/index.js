@@ -188,7 +188,7 @@ pluginsFactory.htmlWebpackPlugin = params => {
         '\n';
 
     return new HtmlWebpackPlugin({
-        chunks: ['app'],
+        chunks: ['loader'],
         template: 'src/webpack.html',
         variables: {
             BaseHREF: params.BaseHREF,

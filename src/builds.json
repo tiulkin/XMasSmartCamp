@@ -1,0 +1,8 @@
+[
+  {
+    "entryPointJS" : "js/app.js",
+    "entryPointCSS" : "css/styles.devbundle.css",
+    "apiBasePath": "/v2",
+    "version": "1.0.0"
+  }
+]

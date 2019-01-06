@@ -49,7 +49,8 @@ const deployConfig = { ...deployJSON, isRunWithDevServer, publicPath };
 const { BaseHREF, mode } = deployConfig;
 const webpackConfig = {
     entry: {
-        app: ['@babel/polyfill', './src/Index.jsx']
+        app: ['@babel/polyfill', './src/Index.jsx'],
+        loader: ['@babel/polyfill', './src/loader.js']
     },
     output: {
         filename: isRunWithDevServer ? 'js/[name].js' : 'js/[hash]/[name].[hash].js',
