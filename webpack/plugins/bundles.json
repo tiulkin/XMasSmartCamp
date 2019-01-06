@@ -1,0 +1,39 @@
+{
+  "general": [{
+      "name": "cleanWebpackPlugin",
+      "devServerMode": 3
+    },{
+      "name": "htmlWebpackPlugin",
+      "devServerMode": 3
+    }, {
+      "name": "contextReplacementPlugin",
+      "devServerMode": 3
+    }, {
+      "name": "filterPlugin",
+      "devServerMode": 3
+    }, {
+      "name": "SVGSpritemapPlugin",
+      "devServerMode": 3
+    }, {
+      "name": "copyWebpackPlugins",
+      "devServerMode": 3
+    },{
+      "name": "loaderOptionsPlugin",
+      "devServerMode": 3
+    },{
+      "name": "deadCodePlugin",
+      "devServerMode": 3
+    }, {
+      "name": "miniCssExtractPlugin",
+      "devServerMode": 3
+    }, {
+      "name": "imageMinPlugins",
+      "devServerMode": 2
+    }, {
+      "name": "bundleAnalyzerPlugin",
+      "devServerMode": 2
+    }
+  ],
+  "development": [],
+  "production": []
+}

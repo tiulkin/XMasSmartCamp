@@ -1,0 +1,20 @@
+{
+  "test": {
+    "PUBLIC_URL": "/",
+    "BaseHREF": "/",
+    "ga": false,
+    "mode": "development"
+  },
+  "predprod": {
+    "PUBLIC_URL": "/",
+    "BaseHREF": "/",
+    "ga": false,
+    "mode": "development"
+  },
+  "prod": {
+    "PUBLIC_URL": "/",
+    "BaseHREF": "/",
+    "ga": true,
+    "mode": "production"
+  }
+}

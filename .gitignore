@@ -1,0 +1,9 @@
+/.idea/
+/node_modules/
+/src/components/Main/layout.html
+/public/
+/publicDev/
+/yarn.lock
+/yarn-error.log
+/deploy.json
+/coverage

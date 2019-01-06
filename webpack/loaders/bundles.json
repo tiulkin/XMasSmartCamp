@@ -1,0 +1,26 @@
+{
+  "general": [
+    {
+      "name": "ignoreLoader",
+      "devServerMode": 3
+    }, {
+      "name": "prettierLoader",
+      "devServerMode": 1
+    }, {
+      "name": "babelWithHotLoader",
+      "devServerMode": 1
+    }, {
+      "name": "cssHotLoader",
+      "devServerMode": 1
+    }, {
+      "name": "babelWithHotLoader",
+      "devServerMode": 2
+    }, {
+      "name": "cssLoader",
+      "devServerMode": 2
+    }
+  ],
+  "development": []
+  ,
+  "production": []
+}
