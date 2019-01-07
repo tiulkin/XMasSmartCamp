@@ -1,8 +1,14 @@
 [
   {
-    "entryPointJS" : "js/app.js",
-    "entryPointCSS" : "css/styles.devbundle.css",
+    "entryPointsJS" : ["js/1c69bd0b8120595fd722/styles.1c69bd0b8120595fd722.js","js/1c69bd0b8120595fd722/app.1c69bd0b8120595fd722.js"],
+    "entryPointsCSS" : ["css/1c69bd0b8120595fd722/styles.1c69bd0b8120595fd722.css"],
     "apiBasePath": "/v2",
     "version": "1.0.0"
+  },
+  {
+    "entryPointsJS" : ["js/beda489d689ae212eee2/styles.beda489d689ae212eee2.js","js/beda489d689ae212eee2/app.beda489d689ae212eee2.js"],
+    "entryPointsCSS" : ["css/beda489d689ae212eee2/styles.beda489d689ae212eee2.css"],
+    "apiBasePath": "/v2",
+    "version": "1.0.1"
   }
 ]

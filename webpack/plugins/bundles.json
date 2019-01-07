@@ -1,7 +1,7 @@
 {
   "general": [{
       "name": "cleanWebpackPlugin",
-      "devServerMode": 3
+      "devServerMode": 1
     },{
       "name": "htmlWebpackPlugin",
       "devServerMode": 3
@@ -31,7 +31,7 @@
       "devServerMode": 2
     }, {
       "name": "bundleAnalyzerPlugin",
-      "devServerMode": 2
+      "devServerMode": 0
     }
   ],
   "development": [],

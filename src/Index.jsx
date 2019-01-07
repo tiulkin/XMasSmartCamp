@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { ConnectedRouter } from 'connected-react-router';
 import Main from './containers/Main';
 import { Provider } from 'react-redux';
-import { ConnectedRouter } from 'connected-react-router';
-
 import configureStore from './store/configureStore';
 import { createBrowserHistory } from 'history';
 import { BaseHREF } from 'constants/settings';

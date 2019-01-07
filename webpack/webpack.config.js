@@ -50,12 +50,13 @@ const { BaseHREF, mode } = deployConfig;
 const webpackConfig = {
     entry: {
         app: ['@babel/polyfill', './src/Index.jsx'],
-        loader: ['@babel/polyfill', './src/loader.js']
+        loader: ['@babel/polyfill', './src/loader.jsx']
     },
     output: {
         filename: isRunWithDevServer ? 'js/[name].js' : 'js/[hash]/[name].[hash].js',
         publicPath: BaseHREF,
         path: path.resolve(`./${publicPath}${BaseHREF}`)
+        // jsonpFunction : `jsonpFunction${Math.random()}`
     },
     mode,
     optimization: {

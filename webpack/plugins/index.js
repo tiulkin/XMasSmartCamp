@@ -95,6 +95,12 @@ pluginsFactory.copyWebpackPlugins = () => {
                 to: './css/',
                 flatten: true
             }
+        ]),
+        new CopyWebpackPlugin([
+            {
+                from: './src/builds.json',
+                to: './'
+            }
         ])
     ];
 };
@@ -167,35 +173,13 @@ pluginsFactory.deadCodePlugin = params => {
 };
 
 pluginsFactory.htmlWebpackPlugin = params => {
-    // Когда html-переменных будет много, вынесем вотдельный файл с настройками
-    // Пока смысла нет
-    const gtagHead =
-        '<!-- Page-hiding snippet (recommended)  -->\n' +
-        '    <style>.async-hide { opacity: 0 !important; } </style>\n' +
-        "    <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date; h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')}; (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c; })(window,document.documentElement,'async-hide','dataLayer',4000, {'GTM-KFQZXKL':true});</script>\n" +
-        '<!-- Google Tag Manager -->' +
-        '\n' +
-        "<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KFQZXKL');</script>" +
-        '\n' +
-        '<!-- End Google Tag Manager -->' +
-        '\n';
-    const gtagBody =
-        '<!-- Google Tag Manager (noscript) -->' +
-        '\n' +
-        '<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFQZXKL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>' +
-        '\n' +
-        '<!-- End Google Tag Manager (noscript) -->' +
-        '\n';
-
     return new HtmlWebpackPlugin({
-        chunks: ['loader'],
+        chunks: [params.isRunWithDevServer ? 'app' : 'loader'],
         template: 'src/webpack.html',
         variables: {
-            BaseHREF: params.BaseHREF,
-            gtagHead: params.ga ? gtagHead : '',
-            gtagBody: params.ga ? gtagBody : ''
+            BaseHREF: params.BaseHREF
         }
-    });
+    })
 };
 
 pluginsFactory.bundleAnalyzerPlugin = () => {
